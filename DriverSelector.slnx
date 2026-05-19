@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/PracticeTask/">
+    <Project Path="D:/Classes/практика/Задание/DriverSelector/TaskCore/TaskCore.csproj" />
+  </Folder>
+  <Project Path="TaskBenchmarks/TaskBenchmarks.csproj" Id="c278adb0-0220-41c6-958a-70a06da08002" />
+  <Project Path="TaskTests/TaskTests.csproj" Id="390464d3-b5a3-4c9c-94f7-127cd5fa2bd3" />
+</Solution>
