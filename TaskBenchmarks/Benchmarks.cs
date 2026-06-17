@@ -24,7 +24,12 @@ public class Benchmarks
     {
         var rnd = new Random(42);
         _drivers = new List<Driver>();
-        for (int i = 1; i <= DriverCount; i++) _drivers.Add(new Driver(i, rnd.Next(1000), rnd.Next(1000)));
+
+        for (int i = 1; i <= DriverCount; i++)
+        {
+            _drivers.Add(new Driver(i, rnd.Next(1000), rnd.Next(1000)));
+        }
+
         _order = new Order(500, 500);
     }
 

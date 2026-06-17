@@ -11,18 +11,23 @@ namespace TaskCore
         public List<Driver> FindNearest(List<Driver> drivers, Order order, int count = 5)
         {
             var driversNdistance = new List<(Driver driver, double distance)>();
+
             foreach (var driver in drivers)
             {
-                double distance = GetDistance.SquaredDistance(driver, order);
+                var distance = DistanceHelper.SquaredDistance(driver, order);
+
                 driversNdistance.Add((driver, distance));
             }
 
             driversNdistance.Sort((a, b) => a.distance.CompareTo(b.distance));
+
             var res = new List<Driver>();
+
             for (int i = 0; i < count && i < driversNdistance.Count; i++)
             {
                 res.Add(driversNdistance[i].driver);
             }
+
             return res;
         }
     }
