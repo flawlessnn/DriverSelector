@@ -18,15 +18,15 @@ namespace TaskTests
         public void Setup()
         {
             _drivers = new List<Driver>
-        {
-            new Driver(1,  501, 500),
-            new Driver(2,  500, 502),
-            new Driver(3,  498, 499),
-            new Driver(4,  503, 503),
-            new Driver(5,  498, 504),
-            new Driver(6,  498, 497),
-            new Driver(7,  510, 490),
-        };
+            {
+                new Driver(1,  501, 500),
+                new Driver(2,  500, 502),
+                new Driver(3,  498, 499),
+                new Driver(4,  503, 503),
+                new Driver(5,  498, 504),
+                new Driver(6,  498, 497),
+                new Driver(7,  510, 490),
+            };
 
         }
 
